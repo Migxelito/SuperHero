@@ -1,0 +1,66 @@
+/*.formulario{
+    margin-left: 25em;
+}*/
+
+
+.fas fa-plane{
+    text-align: center;
+}
+#footer{
+    background-color:#00FFFF;
+}
+
+#footer i {
+    /* Las etiquetas  i, tienen que considerar que actuan parecido a untexto y por ello cn cambiar la propiedad color, cambia el color del icono */
+    color: white;
+}
+.carousel-item img{
+   max-height: 100vh;
+}
+#footer{
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+#Quienes{
+    background-color: aqua;
+}
+
+.fondo{
+    background-color: aqua;
+}
+
+.fabi1{
+    background-color: aqua;    
+}
+
+.borde{
+    border-left: solid white;
+    border-right: solid white;
+    border-top: solid white;
+}
+
+.bordei{
+    border-left: solid white;
+    border-right: solid white;
+    border-bottom: solid white;  
+}
+
+.imgcard2{
+    height: 10.5rem;
+}
+
+.contaman{
+    background-color:white;    
+    width: 80vh;
+    
+
+}
+
+#footer{
+    width: 400vh;
+    
+    /* Problema, se repite la imagen por todo el espacio que tiene disponible */
+    /* R:con background repeat se evita que la imagen se copie multibles veces*/
+    
+}
