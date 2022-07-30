@@ -54,7 +54,12 @@ $(document).ready(function () {
         let peso = data.appearance.weight
         let alianzas = data.biography.a
         let estadisticas = data.powerstats
-        let poder = data.powerstats.powerstats
+        let poder = data.powerstats.power
+        let combate = data.powerstats.combat
+        let inteligencia = data.powerstats.intelligence
+        let fuerza = data.powerstats.strength
+        let durabilidad = data.powerstats.durability
+        let  velocidad= data.powerstats.speed
 
         console.log(poder)
         //console.log(peso)
@@ -76,12 +81,12 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		showInLegend: true,
 		indexLabel: "{name} - {y}%",
 		dataPoints: [
-			{ y:2 , name: "Inteligence" },
-			{ y: 2, name: "Durability"},
-			{ y: 2, name: "Spedd" },
-			{ y: 2, name: "Strenght" },
-			{ y: 2, name: "Combat" },
-			{ y: 5, name: "Power" },
+			{ y: inteligencia , name: "Inteligence" },
+			{ y: durabilidad, name: "Durability"},
+			{ y: velocidad, name: "Speed" },
+			{ y: fuerza, name: "Strenght" },
+			{ y: combate, name: "Combat" },
+			{ y: poder, name: "Power" },
 			
 		]
 	}]
