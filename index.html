@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperHero</title>
- 
-    <script src="assets/js/jquery-3.6.0.min.js"></script>   
-   
-    <!-- Boostrap 4.6 -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
- integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperHero</title>
 
- <!-- Mis archivos -->
- 
- <link rel="stylesheet" href="assets/css/style.css">
 
- <script src="assets/js/main.js"></script>
+  <!-- Jquery -->
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <!-- Mis archivos -->
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="assets/js/main.js"></script>
+
 
 </head>
+
 <body>
 
-    <!-- navbar-->
-    <!-- Image and text -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    
-        <a class="navbar-brand"  href="#" >
-            <img src="assets/img/favicon.ico"  class="d-inline-block align-top m-auto" alt="">
-            SuperHero
-          </a>
-    
-   
+  <!-- navbar-->
+  <!-- Image and text -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/favicon.ico" class="d-inline-block align-top m-auto" alt="">
+    </a>
+
+
   </nav>
 
   <Header class="pt-5">
-    <div align= "center" class="pt-5" >
-        <img src="assets/img/sh1.jpg" alt="" srcset="">
+    <div align="center" class="pt-5">
+      <img src="assets/img/sh1.jpg" alt="" srcset="">
     </div>
-<section  class="col 12">
+    <section class="col 12">
 
 
-<form class="w-50 mx-auto">
-    <h1 class="text center">Encuentra tu SuperHero</h1>
-<label class="lead">Ingrese el numero de Superhero a buscar</label>
-<br>
-<input class="form-control " id="buscar">
-<button class="btn btn-primary my-3">Buscar</button>
-</form>
-</section>
+      <form class="w-50 mx-auto">
+        <h1 class="text center">Encuentra tu SuperHero</h1>
+        <label class="lead">Ingrese el numero de Superhero a buscar</label>
+        <br>
+        <input class="form-control " id="buscar">
+        <button class="btn btn-primary my-3">Buscar</button>
+      </form>
+    </section>
 
-<section>
-    <div class="row">
-<!-- primer div6/2 --> 
-        <div class="col-12 col-sm-6" id="infomacion">
+    <section>
 
-            
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6" id="card1">
+          </div>
+          <div class="col-12 col-sm-6 pt-5">
+            <div id="chartContainer"></div>
+          </div>
         </div>
-        
-<!-- segundo div 6-->
-        <div class="col-12 col-sm-6" id="foto">
 
-        </div>
+      </div>
 
-    </div>
 
-   <p></p>
-</section>
-<div id="graf"></div>
-
+    </section>
   </Header>
-  <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>  
+  <!--CDN Canvas-->
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
+
 </html>
