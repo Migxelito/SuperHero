@@ -1,6 +1,5 @@
 const hojavida = (nombre, conex, ocupacion, P_aparacion, altura, peso, alianzas) => {
 
-
   $('#card1').html(`
              <div class="card">
                 <div class="row">
@@ -25,13 +24,11 @@ const hojavida = (nombre, conex, ocupacion, P_aparacion, altura, peso, alianzas)
                                     <hr>
                                     <p>Alianzas: ${alianzas}</p>
                                 </div>
-                            
                         </div>
                     </div>
                 </div>
             </div>
   `);
-
 }
 
 const mostrarfoto = (imagen) => {
@@ -57,7 +54,7 @@ $(document).ready(function () {
       type: 'GET',
       url: `https://www.superheroapi.com/api.php/10227323604576944/${buscar}`,
       success: (data) => {
-        console.log(data) //Profe xq me da error
+        console.log(data)
         let nombre = data.name
         if(nombre=="-"){nombre = "Sin datos conocidos"}
         let conex = data.connections["group-affiliation"]
@@ -99,7 +96,6 @@ $(document).ready(function () {
           },
           legend: {
             cursor: "pointer",
-            //itemclick: explodePie
           },
           data: [{
             type: "pie",
@@ -112,20 +108,15 @@ $(document).ready(function () {
               { y: durabilidad, name: "Durability" },
               { y: combate, name: "Combat" },
               { y: poder, name: "Power" },
-
             ]
           }]
         });
         chart.render();
-
-        //grafico
-
       },
   
         error: function(xhr, status, error){
           var errorMessage = xhr.status + ': ' + xhr.statusText
-          alert('Error - ' + errorMessage);
-        
+          alert('Error - ' + errorMessage);    
       },
     })}
   })
